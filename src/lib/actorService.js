@@ -1,7 +1,7 @@
 import { API_URI } from './constants'
 
-export async function getGenres() {
-  const response = await fetch(`${API_URI}genres`)
+export async function getActors() {
+  const response = await fetch(`${API_URI}actors`)
   const data = await response.json()
   return data
 }

@@ -1,4 +1,4 @@
-const API_URI = process.env.NEXT_PUBLIC_BACKEND_URI
+import { API_URI } from './constants'
 
 export async function getMovies(query) {
   const response = await fetch(`${API_URI}movies?q=${query || ''}`)
